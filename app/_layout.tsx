@@ -90,9 +90,20 @@ const Layout = () => {
         name="circular-progress/index"
         options={{
           headerTitle: "Circular Progress",
+          headerRight: () => (
+            <TouchableOpacity onPress={() => router.push("/swipe-delete")}>
+              <Text>Swipe Delete</Text>
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="swipe-delete/index"
+        options={{
+          headerTitle: "Swipe Delete",
           // headerRight: () => (
-          //   <TouchableOpacity onPress={() => router.push("/circular-progress")}>
-          //     <Text>Circular Progress</Text>
+          //   <TouchableOpacity onPress={() => router.push("/swipe-delete")}>
+          //     <Text>Swipe Delete</Text>
           //   </TouchableOpacity>
           // ),
         }}
