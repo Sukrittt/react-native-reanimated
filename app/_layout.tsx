@@ -68,9 +68,20 @@ const Layout = () => {
         name="tap-gesture/index"
         options={{
           headerTitle: "Tap Gesture",
+          headerRight: () => (
+            <TouchableOpacity onPress={() => router.push("/color-picker")}>
+              <Text>Color Picker</Text>
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="color-picker/index"
+        options={{
+          headerTitle: "Color Picker",
           // headerRight: () => (
-          //   <TouchableOpacity onPress={() => router.push("/tap-gesture")}>
-          //     <Text>Tap Gesture</Text>
+          //   <TouchableOpacity onPress={() => router.push("/color-picker")}>
+          //     <Text>Color Picker</Text>
           //   </TouchableOpacity>
           // ),
         }}
