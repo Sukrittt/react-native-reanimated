@@ -101,11 +101,17 @@ const Layout = () => {
         name="swipe-delete/index"
         options={{
           headerTitle: "Swipe Delete",
-          // headerRight: () => (
-          //   <TouchableOpacity onPress={() => router.push("/swipe-delete")}>
-          //     <Text>Swipe Delete</Text>
-          //   </TouchableOpacity>
-          // ),
+          headerRight: () => (
+            <TouchableOpacity onPress={() => router.push("/ripple-effect")}>
+              <Text>Ripple Effect</Text>
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="ripple-effect/index"
+        options={{
+          headerTitle: "Ripple Effect",
         }}
       />
     </Stack>
