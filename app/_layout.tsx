@@ -79,9 +79,20 @@ const Layout = () => {
         name="color-picker/index"
         options={{
           headerTitle: "Color Picker",
+          headerRight: () => (
+            <TouchableOpacity onPress={() => router.push("/circular-progress")}>
+              <Text>Circular Progress</Text>
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="circular-progress/index"
+        options={{
+          headerTitle: "Circular Progress",
           // headerRight: () => (
-          //   <TouchableOpacity onPress={() => router.push("/color-picker")}>
-          //     <Text>Color Picker</Text>
+          //   <TouchableOpacity onPress={() => router.push("/circular-progress")}>
+          //     <Text>Circular Progress</Text>
           //   </TouchableOpacity>
           // ),
         }}
